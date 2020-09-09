@@ -14,7 +14,7 @@ HardwareTimer timer(MAPLE_TIMER);
 
 #elif defined(BOARD_NAME)
 // ST's Arduino Core STM32, https://github.com/stm32duino/Arduino_Core_STM32
-HardwareTimer timer(TIM1);
+HardwareTimer timer(TIM2);
     
 #elif defined(ARDUINO_ARCH_STM32) || defined(ARDUINO_ARCH_STM32F1) || defined(ARDUINO_ARCH_STM32F3) || defined(ARDUINO_ARCH_STM32F4)
 // Roger Clark Arduino STM32, https://github.com/rogerclarkmelbourne/Arduino_STM32

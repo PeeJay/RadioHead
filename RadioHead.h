@@ -1355,7 +1355,7 @@ these examples and explanations and extend them to suit your needs.
   #define RH_PLATFORM RH_PLATFORM_ESP8266
  #elif defined(ESP32)
   #define RH_PLATFORM RH_PLATFORM_ESP32
- #elif defined(STM32L0) || defined(ARDUINO_ARCH_STM32L0)
+ #elif defined(STM32L0) || defined(ARDUINO)
   #define RH_PLATFORM RH_PLATFORM_STM32L0
  #elif defined(MGOS)
   #define RH_PLATFORM RH_PLATFORM_MONGOOSE_OS
@@ -1483,9 +1483,6 @@ these examples and explanations and extend them to suit your needs.
 #elif (RH_PLATFORM == RH_PLATFORM_STM32L0)  // https://github.com/GrumpyOldPizza/ArduinoCore-stm32l0
  #include <Arduino.h>
  #include <SPI.h>
- #include <stm32l0_gpio.h>
- #include <stm32l0_exti.h>
- #include <stm32l0_rtc.h>
  #define RH_HAVE_HARDWARE_SPI
  #define RH_HAVE_SERIAL 
 
